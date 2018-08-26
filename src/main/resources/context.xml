@@ -6,6 +6,7 @@
 
     <context:annotation-config/>
 
+    <bean class="com.agapovp.springtheripper.quoters.PostProxyInvokerContextListener"/>
     <bean class="com.agapovp.springtheripper.quoters.ProfilingHandlerBeanPostProcessor"/>
     <!--<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
     <bean class="com.agapovp.springtheripper.quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
