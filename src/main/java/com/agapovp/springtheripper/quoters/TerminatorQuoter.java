@@ -2,6 +2,8 @@ package com.agapovp.springtheripper.quoters;
 
 import lombok.Setter;
 
+import javax.annotation.PostConstruct;
+
 public class TerminatorQuoter implements Quoter {
 
     @InjectRandomInt(min = 2, max = 7)
@@ -9,6 +11,17 @@ public class TerminatorQuoter implements Quoter {
 
     @Setter
     private String message;
+
+    @PostConstruct
+
+    public void init() {
+        System.out.println("Phase 2");
+        System.out.println(repeat);
+    }
+
+    public TerminatorQuoter() {
+        System.out.println("Phase 1");
+    }
 
     @Override
     public void sayQuote() {
