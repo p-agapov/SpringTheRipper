@@ -1,5 +1,5 @@
 package com.agapovp.springtheripper.quoters;
 
 public interface Quoter {
-    void saveQuote();
+    void sayQuote();
 }
